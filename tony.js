@@ -7,10 +7,10 @@ client.on("ready", () => {
     `Online In Servers : ${client.guilds.size} | Users : ${client.users.size}`
   );
   let statuses = [
-    "|ASTERAY MARG UP📌✌|",
+    "|kak tony📌✌|",
     "|دڵ تەنگ مەبن خودا لەگڵمانە ❤😻|",
-    "|☀𝗔𝗕𝗢 𝗨𝗣⬆☀|",
-    "All Staf am up"
+    "|☀ED UP⬆☀|",
+    "ED up"
   ];
 
   setInterval(function() {
@@ -47,11 +47,11 @@ client.on("message", message => {
   switch (command) {
     case "avatjhyuyujujjhhhjuijjiar":
       message.channel.send(
-        `وێنەی ئەکاونتەکەت ئەوەیە <:emoji_299:765347080515354654>: ${message.author.avatarURL}`
+        `وێنەی ئەکاونتەکەت ئەوەیە: ${message.author.avatarURL}`
       );
       break;
 
-    case "<@652999772122120202>":
+    case "<@652999772122120202>":////////ID XHOT
       message.channel.send("فــەرمـــوو دڵـــی مــن ❤ ");
   }
 });
@@ -81,8 +81,8 @@ client.on("message", msg => {
 });
 
 client.on("message", msg => {
-  if (msg.content === "abo") {
-    msg.reply("**<@652999772122120202> xoy chwabt adatawa ❤**");
+  if (msg.content === "TONY") { ////////NAWEK DANE BA DLL XHOT WAK AMA
+    msg.reply("** xoy chwabt adatawa ❤**"); //// ID XHOT
   }
 });
 
@@ -93,7 +93,7 @@ client.on("message", message => {
     if (message.member.hasPermission("MOVE_MEMBERS")) {
       if (message.mentions.users.size === 0) {
         return message.channel.send(
-          "``To use the command type this command <a:emoji_23:799005021303210024>: " +
+          "``To use the command type this command : " +
             prefix +
             "move [USER]``"
         );
