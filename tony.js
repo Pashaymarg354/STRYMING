@@ -296,7 +296,7 @@ client.on("message", async msg => {
 
 client.on("message", message => {
   //Turbo Codes
-  var args = message.content.split(" ").slice(1); //Turbo Codes
+  var args = message.content.split(" ").slice(1); //
   if (message.content.startsWith(prefix + "id")) {
     //Turbo Codes
     var year = message.author.createdAt.getFullYear();
@@ -710,7 +710,7 @@ client.on("message", message => {
   if (message.content.startsWith(prefix + "mv")) {
     if (!message.member.hasPermission("MUTE_MEMBERS"))
       return message.channel
-        .sendMessage("**ليس لديك صلاحية لاعطاء ميوت صوتي**❌ ")
+        .sendMessage("****❌ ")
         .then(m => m.delete(5000));
     if (!message.guild.member(client.user).hasPermission("MUTE_MEMBERS"))
       return message
@@ -1104,17 +1104,17 @@ client.on("message", message => {
 });
 
 client.on("message", message => {
-  //Black jack
+  //TONY BOT
   if (!message.channel.guild) return;
   if (message.content == prefix + "count")
-    //Black jack
+    //TONY BOT
     var Black = new Discord.RichEmbed()
       .setThumbnail(message.author.avatarURL)
       .setFooter(message.author.username, message.author.avatarURL)
       .setTitle("🌍| Info member", `__${message.guild.name}__`)
-      .addBlankField(true) //Black jack
+      .addBlankField(true) //TONY BOT
       .addField("Member count", `__${message.guild.memberCount}__`);
-  message.channel.send(Black);
+  message.channel.send(TONY);
 });
 
 client.on("message", message => {
@@ -1162,7 +1162,7 @@ client.on("message", message => {
       .setThumbnail("https://i.imgur.com/ib3n4Hq.png")
       .setTitle("『TIME AND DATE』")
       .setColor("RANDOM")
-      .setFooter("BLACK BOT")
+      .setFooter("TONY BOT")
       .setFooter(message.author.username, message.author.avatarURL)
       .addField("Time", "『" + hours2 + ":" + minutes + ":" + seconds + "』")
 
